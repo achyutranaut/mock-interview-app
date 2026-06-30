@@ -25,8 +25,8 @@ A full-stack MERN app that generates role-specific technical interview questions
 ## Project Structure
 ```
 mock-interview-app/
-├── client/   # React frontend
-└── server/   # Express backend
+├── frontend/   # React frontend
+└── backend/    # Express backend
 ```
 
 ## API Endpoints
@@ -43,7 +43,7 @@ mock-interview-app/
 
 **Backend**
 ```bash
-cd server
+cd backend
 npm install
 ```
 Create `.env`:
@@ -60,7 +60,7 @@ npm run dev
 
 **Frontend**
 ```bash
-cd client
+cd frontend
 npm install
 npm run dev
 ```
