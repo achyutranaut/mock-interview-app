@@ -13,7 +13,7 @@ const verifyJWT = require('./middleware/verifyJWT');
 connectDB();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://mock-interview-app-swart.vercel.app',
   credentials: true
 }));
 
