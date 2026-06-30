@@ -2,7 +2,7 @@
 
 A full-stack MERN app that generates role-specific technical interview questions using AI, collects answers, and gives instant structured feedback.
 
-**Live Demo:** _coming soon_
+**Live Demo:** https://mock-interview-app-swart.vercel.app
 
 ## Features
 - JWT auth (access + refresh tokens, HTTP-only cookies)
@@ -49,7 +49,7 @@ npm install
 Create `.env`:
 ```
 PORT=3000
-MONGO_URI=your_mongodb_uri
+MONGODB_URI=your_mongodb_uri
 ACCESS_TOKEN_SECRET=your_secret
 REFRESH_TOKEN_SECRET=your_secret
 GROQ_API_KEY=your_groq_key
@@ -59,6 +59,10 @@ npm run dev
 ```
 
 **Frontend**
+Create `.env` inside `frontend`:
+```
+VITE_API_URL=http://localhost:3000
+```
 ```bash
 cd frontend
 npm install
