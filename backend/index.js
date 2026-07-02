@@ -2,7 +2,6 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
-const path = require('path');
 const cors = require('cors');
 const connectDB = require('./config/db');
 const mongoose = require('mongoose');
@@ -20,6 +19,8 @@ app.use(cors({
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 app.use(cookieParser());
+
+app.get('/api/health', (req, res) => res.sendStatus(200));
 
 app.use('/api/register', require('./routes/register'));
 app.use('/api/auth', require('./routes/auth'));

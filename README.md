@@ -69,5 +69,7 @@ npm install
 npm run dev
 ```
 
+> ⚠️ Note: Backend is hosted on Render's free tier and may take 30–50 seconds to respond on first load.
+
 ## Author
 **Achyut** — [GitHub](https://github.com/achyutranaut)
